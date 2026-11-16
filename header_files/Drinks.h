@@ -17,6 +17,8 @@ private:
 	std::string temperature;
 	int calories;
 	Money price;
+	int quantity;
+	
 
 public:
 	Drink(); //default constructor
@@ -35,7 +37,7 @@ public:
 	void setCalories(int calories);
 	void setPrice(Money price);
 
-	Money calculatePrice(int quantity, const Money& basePrice) const;
+	Money calculatePrice(int quantity, const Money& Price) const;
 
 };
 
