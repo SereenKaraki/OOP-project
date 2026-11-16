@@ -5,6 +5,7 @@ using namespace std;
 class Money
 {
 	int fils;
+	string currency;
 public:
 	Money(int dinars_ = 0, int fils = 0);
 	Money(const Money& source); 
