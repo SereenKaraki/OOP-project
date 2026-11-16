@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 using namespace std;
-
+//lalalalala
 class Money
 {
 	int fils;
