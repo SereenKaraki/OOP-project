@@ -18,7 +18,7 @@ private:
     Money price;
     Rating DessertRating;
     int quality;
-    std::string basePrice;
+
 public:
     Dessert();//default constructor
     Dessert(const std::string& DessertName,bool hasNuts,Rating& DessertRating,Money price); //paramterized constructor
@@ -33,7 +33,7 @@ public:
     void setPrice(Money price);
     void setHasNuts(bool HasNuts);
     void setDessertRating(int r);
-    Money calculatePrice(int quantity, const Money& basePrice) const;
+    Money calculatePrice(int quantity, const Money& Price) const;
 };
 
 #endif
