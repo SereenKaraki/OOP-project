@@ -5,15 +5,12 @@
 // Juman Elsayeh 20250068
 // Sereen Alkaraki 20250293
 #pragma once
-#include <iostream>
-using namespace std;
 
 class Money
 {
 	int fils;
-	string currency;
 public:
-	Money(int dinars_ = 0, int fils = 0);
+	Money(int fils = 0);
 	Money(const Money& source); 
 	~Money();
 
@@ -23,10 +20,10 @@ public:
 	int getDinars()const;
 	int getFils()const;
 
-	Money Addition(const Money& source);
-	Money Subtraction(const Money& source);
-
-	Money compareTo(const Money& source);
+	Money Addition(const Money& source)const;
+	Money Subtraction(const Money& source)const;
+	Money Multiplication(const Money& source,int quantity)const;
+	int compareTo(const Money& source)const;
 
 	void printMoney()const;
 };
