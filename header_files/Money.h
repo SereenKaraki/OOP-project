@@ -14,7 +14,6 @@ public:
 	Money(const Money& source); 
 	~Money();
 
-	void setDinars(int dinars_);
 	void setFils(int fills_);
 
 	int getDinars()const;
