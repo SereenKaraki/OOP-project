@@ -6,8 +6,6 @@
 // Sereen Alkaraki 20250293
 //Rating
 #pragma once
-#include <iostream>
-using namespace std;
 
 class Rating
 {
@@ -19,9 +17,11 @@ public:
     void setRating(int rating);
     int getRatingSum()const;
     int getRatingCount()const;
+    doubke getAvg()const;
 
     int addRating(int rating);
-    bool validRating(int rating);
+    bool validRating(int rating)const;
+    double getAvg()const;
     ~Rating();
 
 
