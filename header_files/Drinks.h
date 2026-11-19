@@ -30,12 +30,14 @@ public:
 	Money getPrice()const;
 	char getSize() const;
 	int getCalories() const;
+ 	int getQuantity() const;
 	//setters
 	void setDrinkName(std::string& DrinkName);
 	void setSize(char size);
 	void setTemperature(std::string& temperature);
 	void setCalories(int calories);
 	void setPrice(Money price);
+	void setQuantity(int q);
 
 	Money calculatePrice(int quantity, const Money& Price) const;
 
