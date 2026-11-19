@@ -28,7 +28,7 @@ public:
     bool getHasNuts() const;
     Rating getDessertRating() const;
     Money getPrice()const;
-    int getQuantity();
+    int getQuantity()const;
     //setters
     void setDessertName(std::string& DessertName);
     void setPrice(Money price);
