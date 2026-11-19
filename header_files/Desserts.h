@@ -17,7 +17,7 @@ private:
     bool HasNuts;
     Money price;
     Rating DessertRating;
-    int quality;
+    int quantity;
 
 public:
     Dessert();//default constructor
@@ -28,11 +28,13 @@ public:
     bool getHasNuts() const;
     Rating getDessertRating() const;
     Money getPrice()const;
+    int getQuantity();
     //setters
     void setDessertName(std::string& DessertName);
     void setPrice(Money price);
     void setHasNuts(bool HasNuts);
     void setDessertRating(int r);
+    void setQuantity(int q);
     Money calculatePrice(int quantity, const Money& Price) const;
 };
 
