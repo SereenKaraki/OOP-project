@@ -16,15 +16,17 @@ private:
     int itemStock;
     const int itemCode;
     static int nextCode;
+    static int liveCode;
 
 public:
     //constructors
     MenuItem();
-    MenuItem(Money p, int is, const int ic);
+    MenuItem(Money& p, int is, int ic, char* name, char description='');
     MenuItem(const MenuItem& other);
     ~MenuItem();
 
     //setters
+    void setName(const char*);
     void setPrice(Money p);
     void setItemStock(int i);
     
@@ -33,5 +35,8 @@ public:
     int getItemStock()const;
     int getItemCode()const;
 
+    static int getNextCode();
+    static int getLiveCount();
 
+    int addPortions(int amount=1);
 };
