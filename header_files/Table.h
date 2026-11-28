@@ -1,4 +1,4 @@
-~~~Cpp~~~
+
 //Table.h
 #pragma once
 #ifndef TABLE_H
