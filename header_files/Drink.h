@@ -6,8 +6,6 @@
 // Sereen Alkaraki 20250293
 
 #pragma once
-#ifndef DRINK_H
-#define DRINK_H
 #include "Money.h"
 
 class Drink {
@@ -43,4 +41,4 @@ public:
 
 };
 
-#endif
+
