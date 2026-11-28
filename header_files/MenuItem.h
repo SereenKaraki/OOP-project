@@ -21,7 +21,7 @@ private:
 public:
     //constructors
     MenuItem();
-    MenuItem(Money& p, int is, int ic, char* name, char description='');
+    MenuItem(Money& p, int is, char* name, char description='');
     MenuItem(const MenuItem& other);
     ~MenuItem();
 
