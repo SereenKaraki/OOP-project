@@ -11,8 +11,6 @@ public:
 
     int countUsedTables(const Restaurant& restaurant) const;
 
-    int countGroupsServed(const Restaurant& restaurant) const;
-
     int countGuestsServed(const Restaurant& restaurant) const;
 };
 
