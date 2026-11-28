@@ -16,18 +16,17 @@ private:
 
 public:
     Dessert();//default constructor
-    Dessert(const bool hasNuts,Rating& DessertRating); //paramterized constructor
+    Dessert(bool hasNuts,Rating& DessertRating); //paramterized constructor
     ~Dessert(); //destructor
     //getters
     bool getHasNuts() const;
     Rating getDessertRating() const;
   
     //setters
-  
     void setHasNuts(bool HasNuts);
     void setDessertRating(int r);
 
-    Money calculatePrice(int quantity, const Money& Price) const;
+ 
 };
 
 
