@@ -5,7 +5,7 @@
 // Name:Sereen Alkaraki      ID: 20250293
 // Name:Leen Alkaissi        ID: 20250775
 #pragma once
-class MenuItem;
+#include "MenuItem"
 class Menu{
 private:
 	MenuItem** items;
@@ -18,8 +18,8 @@ public:
 	~Menu();
 	bool addItem(MenuItem* item);
 	MenuItem* getItem(int position) const;
-	int const getCount();
-	int const getCapacity();
+	int getCount()const;
+	int getCapacity()const;
 };
 
 
