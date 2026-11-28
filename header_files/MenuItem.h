@@ -38,5 +38,5 @@ public:
     static int getNextCode();
     static int getLiveCount();
 
-    int addPortions(int amount=1);
+    bool addPortions(int amount=1);
 };
