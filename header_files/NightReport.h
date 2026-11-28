@@ -1,6 +1,4 @@
-#ifndef NIGHTREPORT_H
-#define NIGHTREPORT_H
-
+#pragma once
 class Restaurant;
 
 class NightReport {
@@ -18,4 +16,3 @@ public:
     int countGuestsServed(const Restaurant& restaurant) const;
 };
 
-#endif
