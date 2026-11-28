@@ -21,22 +21,26 @@ private:
 public:
     //constructors
     MenuItem();
-    MenuItem(Money& p, int item_stock, char* name, char description='');
+    MenuItem(Money& p, int item_stock, char* name, char description); 
+    // description='' yes or no :)
     MenuItem(const MenuItem& other);
     ~MenuItem();
 
     //setters
-    void setName(const char*);
-    void setPrice(Money p);
-    void setItemStock(int i);
+    MenuItem& setName(const char name[]);
+    MenuItem& setPrice(const Money& p);
+    MenuItem& setPortions(int portions);
     
     //getters
-    Money getPrice()const;
+    const char* getName() const;
+    const char* getDescription() const;
+    const Money& getPrice() const;
     int getItemStock()const;
     int getItemCode()const;
+    
 
     static int getNextCode();
     static int getLiveCount();
 
-    int addPortions(int amount=1);
+    bool addPortions(int amount=1);
 };
