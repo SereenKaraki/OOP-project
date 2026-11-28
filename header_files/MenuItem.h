@@ -21,7 +21,8 @@ private:
 public:
     //constructors
     MenuItem();
-    MenuItem(const Money& p, const int item_stock, const char* name, const char description='');
+    MenuItem(const Money& p, const int item_stock, const char* name, const char description);
+    // description='' yes or no :)
     MenuItem(const MenuItem& other);
     ~MenuItem();
 
