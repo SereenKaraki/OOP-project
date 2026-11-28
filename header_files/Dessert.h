@@ -6,8 +6,6 @@
 // Sereen Alkaraki 20250293
 
 #pragma once
-#ifndef DESSERT_H
-#define DESSERT_H
 #include "Rating.h"
 #include "Money.h"
 
@@ -38,5 +36,5 @@ public:
     Money calculatePrice(int quantity, const Money& Price) const;
 };
 
-#endif
+
 
