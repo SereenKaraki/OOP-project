@@ -11,28 +11,22 @@
 
 class Dessert {
 private:
-    std::string DessertName;
     bool HasNuts;
-    Money price;
     Rating DessertRating;
-    int quantity;
 
 public:
     Dessert();//default constructor
-    Dessert(const std::string& DessertName,bool hasNuts,Rating& DessertRating,Money price); //paramterized constructor
+    Dessert(const bool hasNuts,Rating& DessertRating); //paramterized constructor
     ~Dessert(); //destructor
     //getters
-    std::string getDessertName();
     bool getHasNuts() const;
     Rating getDessertRating() const;
-    Money getPrice()const;
-    int getQuantity()const;
+  
     //setters
-    void setDessertName(std::string& DessertName);
-    void setPrice(Money price);
+  
     void setHasNuts(bool HasNuts);
     void setDessertRating(int r);
-    void setQuantity(int q);
+
     Money calculatePrice(int quantity, const Money& Price) const;
 };
 
