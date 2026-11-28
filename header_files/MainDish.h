@@ -4,6 +4,7 @@
 // Juman Alsayeh 20250068
 // Sereen Alkaraki 20250293
 
+#pragma once
 #include <string>
 using namespace std;
 
