@@ -1,8 +1,6 @@
 
 //Table.h
 #pragma once
-#ifndef TABLE_H
-#define TABLE_H
 
 // Group Members:
 // Name:Layan Seyam          ID: 20250326
@@ -34,4 +32,3 @@ public:
 	bool isOccupied()const;
 	bool wasUsed()const;
 };
-#endif
