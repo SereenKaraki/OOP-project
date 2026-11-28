@@ -26,14 +26,17 @@ public:
     ~MenuItem();
 
     //setters
-    void setName(const char*);
-    void setPrice(Money p);
-    void setItemStock(int i);
+    MenuItem& setName(const char name[]);
+    MenuItem& setPrice(const Money& p);
+    MenuItem& setPortions(int portions);
     
     //getters
-    Money getPrice()const;
+    const char* getName() const;
+    const char* getDescription() const;
+    const Money& getPrice() const;
     int getItemStock()const;
     int getItemCode()const;
+    
 
     static int getNextCode();
     static int getLiveCount();
